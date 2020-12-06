@@ -10,28 +10,20 @@
   gtag('js', new Date());
   gtag('config', 'UA-171569126-1');
 </script>
+<!--
 <link rel="icon" 
       type="image/png"
-      href="https://lh3.googleusercontent.com/ujASj7mUvUavh-f3-n1PoZ5CNGAQ0IByns4RZPMwvQOmvAQ8fP1xOk5S65ilqf979SZyp9047YN3USrLGGw6wq1417f9kg6hbmoYN8h6lmXC9RQ9nVMg7mohYeu43_8cIYS0oVbWGQ=s157-p-k">
-  <meta name="description" content="Ever heard distinct bird sounds in the wild or around you and wondered which bird it is? WildWav is developed precisely to identify our flappy friend!"/>
-  <meta property="og:image" content="https://lh3.googleusercontent.com/fiSdaB-xLRIVEHB1hFjvXoZdwpQqQ3ZAYA06tAY-UNQVbKxze5NHFli-wnH1TOudM46k89Fn560tsEHXK00PctvjdKDKUy5exqiwRpngYZekntLgd_7_LuNyKpQFw-6_0ftvKp0uUw=w2400" />
-  <meta property="og:description" content="Ever heard distinct bird sounds in the wild or around you and wondered which bird it is? WildWav is developed precisely to identify our flappy friend!" />
-  <meta property="og:title" content="WildWav - Bird Sound Identifier" />
+      href="../Images/logo_transparent.png">
+  <meta name="description" content="Upgrade your audio"/>
+  <meta property="og:image" content="../Images/logo_transparent.png" />
+  <meta property="og:description" content="Upgrade your audio" />
+  <meta property="og:title" content="DeciBull - Audio Upsampling" />
       <meta charset="UTF-8">
-  <title>WildWav</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-  
+-->
+  <title>DeciBull</title>
 <style>
 body  {
-  background-image: url("https://lh3.googleusercontent.com/pCYviuMpoPp37Id4HsDBwjtcDFSnd5gZgLGqZAGQXpLtPGKLUlYHnu3w9wIJ28hCjW-et7SIrxY-mG_GPUdqsaxxEGvOOSbSYfotY_AX4MPnkDaGQ55FQmUSyRNcHKnJ9SkEZL0CHw=w2400");
-  background-position: center center;
-  background-color: #175F77;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover
+  background-color: #151515;
 }
 </style>
 
@@ -43,7 +35,7 @@ body  {
   padding: 20px 0;
   text-align: center;
   align: center;
-  background-color: rgba(4, 43, 76, 0.5);
+  background-color: rgba(132, 0, 0, 0.5);
   margin-top: 5px;
   margin-bottom: 5px;
   min-width: 300px;
@@ -56,7 +48,11 @@ body  {
   padding:0;
 }
 h1 {
-line-height: 0.9em;
+line-height: 2.0em;
+text-align: center;
+color: whitesmoke;
+font-size: 2.0em;
+font-weight: bold;
 } 
 html {
     overflow-y: scroll;
@@ -72,7 +68,7 @@ html {
 /* Track */
 ::-webkit-scrollbar-track {
   
-   background-color: #04122C;
+   background-color: darkred;
   border-radius: 0px;
 }
  
@@ -99,23 +95,23 @@ iframe{
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+<body style="background-color: #151515;">
   <div class="content">
     <div class="jumbotron">
         <div class="container">
-   
-            <h1 style="color:white;font-size:2vw;font-family:Brush Script MT;">
+          <center>
             <br>
-               <center> <a href="https://wildwav.herokuapp.com/"><img src="https://lh3.googleusercontent.com/9H6UYO3otUiWptObzACYKwonhAh6G6vfUsmleFcFmoodE4pMWbj1HY7s5d_VrBJvsWBw46-WO4ytG1KpDnwyKKmj_5pZuzMx3gZAm0PLjqFyfKj6mDV_0xie4DLWqHRewXlDad11bQ=w2400" alt="Wild-Wav-Logo-White" border="0" style="width:35%;min-width: 300px"></a> </center>
-               <center><img src="https://lh3.googleusercontent.com/Nlvuw903ncyxHvVlLgx9QqX4Y-Kz7AQzRLfHFOT9M5GL51lDk9SnoEKazTFQSUzcxGAQ2f8SWrR1N-WGw3rgwHkvAGUrKU0Eo6UDlLSWx_2vTugVlep0i08-_Esd8NOKphPCikllXA=w2400" alt="Bird-Sound-Identifier" border="0" style="width:15%;min-width:150px"></center>
-            </h1>
-       
+               <center> <a href="https://decibull.app/"><img src="https://decibull.app/img/logo_large.png" alt="logo" style="width:20%;min-width: 150px"></a> </center>
+            <br> 
+               <h1 class="sansserif"> Deci<span style="color:darkred">Bull</span></h1>
+              
+          </center>
         </div>
     </div>
 
     <center> 
     <div class="container">
-        <canvas id="analyser" style="width:35%;height:160px;background-color: rgba(4, 43, 76, 0.5);border-radius: 12px;min-width: 300px" width="1024" height="500"></canvas>
+        <canvas id="analyser" style="width:35%;height:160px;background-color: rgba(132, 132, 132, 0.3);border-radius: 12px;min-width: 300px" width="1024" height="500"></canvas>
         <p>
         
         <div id="recorddiv" class="stuff">
@@ -132,7 +128,7 @@ iframe{
         <div id="browsediv" class="stuff">
             <button id="browse" class="button button3" onclick="document.getElementById('myFileInput').click();browse_clicked()">BROWSE FILE</button>
         </div>
-
+      
         <div style="width:50%; margin:auto;">
            
             <center> 
@@ -207,7 +203,7 @@ if( url.search( 'predict' ) > 0 ) {
     
 
     <center>
-    <h2 style="font-size:225%;color: white;background-color: rgba(238, 98, 107,0.8);font-family:Helvetica">
+    <h2 style="font-size:225%;color: white;background-color: rgba(110, 0, 0, 0.8);font-family:Helvetica">
     {% with errors = get_flashed_messages(category_filter=["error"]) %}
     {% if errors %}
         {%- for msg in errors %}
@@ -220,7 +216,7 @@ if( url.search( 'predict' ) > 0 ) {
     </center>
     
     <center> 
-    <h2 style="font-size:225%;color: white;background-color: rgba(6, 22, 47,0.8);font-family:Helvetica">     
+    <h2 style="font-size:125%;color: white;background-color: rgba(110, 0, 0, 0.8);font-family:Helvetica">     
     
     {% with info = get_flashed_messages(category_filter=["info"]) %}
     {% if info %}
@@ -236,7 +232,7 @@ if( url.search( 'predict' ) > 0 ) {
     <center>
     <button class="togglebtn"><div id="container"><img src="{{bird}}" border="0" style="max-height: 300px" id="img1"><img src="{{birdmore}}" border="0" style="max-height: 300px" id="img2"></div></button>
     </center>
-<center><br><div class="box1" id="box1" style="width:34%;background-color: rgba(4, 43, 76, 0.5);border-radius: 12px;min-width: 300px;color:white;font-family:Helvetica;font-size:90%;padding-top:10px;padding-right:10px;padding-bottom:20px;padding-left:10px;" width="1024" height="1000">
+<center><br><div class="box1" id="box1" style="width:34%;background-color: rgba(110, 0, 0, 0.8);border-radius: 12px;min-width: 300px;color:white;font-family:Helvetica;font-size:90%;padding-top:10px;padding-right:10px;padding-bottom:20px;padding-left:10px;" width="1024" height="1000">
 <br><iframe src="{{birdlink}}" width="650" height="650"style="border-radius: 12px;width:95%;border: none;" >
 </iframe>
 </div></center>
@@ -305,27 +301,27 @@ function showElement(){
 .button1 {
   border-radius: 12px;
   padding: 15px 40px;
-  background-color: rgba(4, 37, 74);
+  background-color: rgba(255, 255, 255, 0.5);
   color: white;
-  border: 2px solid #04254A;
+  border: 2px solid darkred;
 }
 
 .button1:hover {
-  background-color: #06376D;
-    border: 2px solid #06376D;
+  background-color: darkred;
+    border: 2px solid darkred;
   color: white;
 }
 
 .button2 {
   border-radius: 12px;
   padding: 15px 36.5px;
-  background-color: rgba(55, 78, 103, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   color: white;
-  border: 2px solid #374E67;
+  border: 2px solid darkred;
 }
 
 .button2:hover {
-  background-color: #374E67;
+  background-color: darkred;
   color: white;
 }
 
@@ -334,17 +330,17 @@ function showElement(){
   padding: 15px 18px;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
-  border: 2px solid #9355B3;
+  border: 2px solid darkred;
 }
 
 .button3:hover {
-  background-color: #9355B3;
+  background-color: darkred;
   color: white;
   
 }
 
 .button3:focus {
-  background-color: #9355B3;
+  background-color: darkred;
   color: white;
 }
 
@@ -353,16 +349,16 @@ function showElement(){
   padding: 15px 40.5px;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
-  border: 2px solid #07A261;
+  border: 2px solid darkred;
 }
 
 .button4:hover {
-  background-color: #07A261;
+  background-color: darkred;
   color: white;
 }
 
 .button4:focus {
-  background-color: #07A261;
+  background-color: darkred;
   color: white;
 }
 
@@ -371,12 +367,12 @@ function showElement(){
   padding: 15px 55.18px;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
-  border: 2px solid #DE4A57;
+  border: 2px solid darkred;
 
 }
 
 .button5:hover {
-  background-color: #DE4A57;
+  background-color: darkred;
   color: white;
 }
 
@@ -411,7 +407,10 @@ body {
     <script src="{{ url_for('static', filename='audiodisplay.js') }}"></script>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
 
+    <p style="color:whitesmoke"><strong>Recordings:</strong></p>
+  	<ol id="recordingsList"></ol>
 </body>
+<!--
 </div>
  <div class="spacer"></div>
 <footer class="footer">
@@ -426,3 +425,4 @@ body {
 
 
 </html>
+-->

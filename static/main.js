@@ -28,6 +28,9 @@ var recIndex = 0;
 
 function gotBuffers(buffers) {
     audioRecorder.exportMonoWAV(doneEncoding);
+    // Patti Added
+    audioRecorder.exportMonoWAV(createDownloadLink);
+    // End Patti Added
 }
 
 function doneEncoding(soundBlob) {
@@ -188,3 +191,24 @@ function unpause() {
         console.log('Playback resumed successfully');
     });
 }
+
+// Patti Added
+function createDownloadLink(blob) {
+	
+	var url = URL.createObjectURL(blob);
+	var au = document.createElement('audio');
+	var li = document.createElement('li');
+
+	//add controls to the <audio> element
+	au.controls = true;
+	au.src = url;
+
+	//add the new audio element to li
+	li.appendChild(au);
+	
+	//add the li element to the ol
+    recordingsList.appendChild(li);
+    
+    audioRecorder.exportMonoWAV(doneEncoding);
+}
+// End Patti Added
